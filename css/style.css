@@ -30,13 +30,15 @@ body {
     left: 0;
     position: absolute;
     display: inline-block;
-    width: 0%;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
     height: 100%;
     background: #05a16d;
     border-radius: 0 15px 15px 0;
     color: transparent;
     z-index: -1;
-    transition: width 3s cubic-bezier(0.01, 0.02, 1, 0.63);
+    transition: transform 3s cubic-bezier(.32, 0, .07, 1);
 }
 
 /* CHANGE OPTION */

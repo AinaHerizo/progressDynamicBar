@@ -10,11 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let count = 0
     
 
-
     changeValue.addEventListener("click", (event)=>{
         event.preventDefault()
         let utilisateurValue =  Number(numberChange.value)
-        progressBar.style.width = numberChange.value+"%"
+        progressBar.style.transform = "scaleX("+numberChange.value/100+")"
         let timeInterval = 3000/(Math.abs(numberChange.value-count))
         
         if(window.barProgression){
